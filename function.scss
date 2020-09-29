@@ -1,0 +1,53 @@
+@mixin flex-layout($direction: row, $justify: center, $align: stretch) {
+	/* #ifndef APP-PLUS-NVUE */
+	display: flex;
+	/* #endif */
+	flex-direction: $direction;
+	align-items: $align;
+	justify-content: $justify;
+}
+
+@mixin font($size: $uni-font-size-base, $color: $uni-text-color, $line-height: 1.5) {
+	font-size: $size;
+	color: $color;
+	line-height: $size*$line-height;
+}
+
+@mixin border($width: 0.5px, $style: solid, $color: $uni-border-color, $position: top right bottom left) {
+	@each $item in $position {
+		// @debug border-#{$item}-width;
+		border-#{$item}-width: $width;
+		border-#{$item}-color: $color;
+		border-#{$item}-style: $style;
+	}
+}
+
+@mixin imageFull {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	
+	/* #ifndef APP-PLUS-NVUE */
+	height: 100%;
+	width: 100%;
+	/* #endif */
+}
+
+@mixin lines($lines:2) {
+	/* #ifndef APP-NVUE */
+	word-break: break-all;
+	text-overflow: ellipsis;
+	display: -webkit-box; 
+	-webkit-box-orient: vertical; 
+	-webkit-line-clamp: $lines; 
+	overflow: hidden; 
+	/* #endif */
+	
+	/* #ifdef APP-NVUE */
+	lines: $lines;
+	/* #endif */
+}
+
+

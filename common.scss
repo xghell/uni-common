@@ -1,0 +1,289 @@
+
+// 行数
+.lines-1 {
+	@include lines(1);
+}
+.lines-2 {
+	@include lines(2);
+}
+.lines-3 {
+	@include lines(3);
+}
+
+//颜色
+.bg-color-mask {
+	background-color: $uni-bg-color-mask;
+}
+
+.text-color-white {
+	color: $uni-color-white;
+}
+.bg-color-white {
+	background-color: $uni-color-white;
+}
+.border-color-white {
+	border-color: $uni-color-white;
+}
+
+.text-color-red {
+	color: $uni-color-red;
+}
+.bg-color-red {
+	background-color: $uni-color-red;
+}
+.border-color-red {
+	border-color: $uni-color-red;
+}
+
+.text-color-green {
+	color: $uni-color-green;
+}
+.bg-color-green {
+	background-color: $uni-color-green;
+}
+.border-color-green {
+	border-color: $uni-color-green;
+}
+
+.text-color-blue {
+	color: $uni-color-blue;
+}
+.bg-color-blue {
+	background-color: $uni-color-blue;
+}
+.border-color-blue {
+	border-color: $uni-color-blue;
+}
+
+.text-color-grey {
+	color: $uni-color-grey;
+}
+.bg-color-grey {
+	background-color: $uni-color-grey;
+}
+.border-color-grey {
+	border-color: $uni-color-grey;
+}
+
+.text-color-greyblack {
+	color: $uni-color-greyblack;
+}
+.bg-color-greyblack {
+	background-color: $uni-color-greyblack;
+}
+.border-color-greyblack {
+	border-color: $uni-color-greyblack;
+}
+
+// 文字
+.font-size-xs {
+	font-size: $uni-font-size-xs;
+}
+.font-size-sm {
+	font-size: $uni-font-size-sm;
+}
+.font-size-base {
+	font-size: $uni-font-size-base;
+}
+.font-size-lg {
+	font-size: $uni-font-size-lg;
+}
+.font-size-xl {
+	font-size: $uni-font-size-xl;
+}
+
+//图片
+.img-size-xs {
+	width: $uni-img-size-xs;
+	height: $uni-img-size-xs;
+}
+.img-size-sm {
+	width: $uni-img-size-sm;
+	height: $uni-img-size-sm;
+}
+.img-size-base {
+	width: $uni-img-size-base;
+	height: $uni-img-size-base;
+}
+.img-size-lg {
+	width: $uni-img-size-lg;
+	height: $uni-img-size-lg;
+}
+.img-size-xl {
+	width: $uni-img-size-xl;
+	height: $uni-img-size-xl;
+}
+
+
+// 边距
+.margin-sm {
+	margin: $uni-spacing-row-sm $uni-spacing-col-sm;
+}
+.margin-base {
+	margin: $uni-spacing-row-base $uni-spacing-col-base;
+}
+.margin-lg {
+	margin: $uni-spacing-row-lg $uni-spacing-col-lg;
+}
+
+.margin-side-sm {
+	margin-left: $uni-spacing-col-sm;
+	margin-right: $uni-spacing-col-sm;
+}
+.margin-side-base {
+	margin-left: $uni-spacing-col-base;
+	margin-right: $uni-spacing-col-base;
+}
+.margin-side-lg {
+	margin-left: $uni-spacing-col-lg;
+	margin-right: $uni-spacing-col-lg;
+}
+.margin-v-side-sm {
+	margin-top: $uni-spacing-row-sm;
+	margin-bottom: $uni-spacing-row-sm;
+}
+.margin-v-side-base {
+	margin-top: $uni-spacing-row-base;
+	margin-bottom: $uni-spacing-row-base;
+}
+.margin-v-side-lg {
+	margin-top: $uni-spacing-row-lg;
+	margin-bottom: $uni-spacing-row-lg;
+}
+
+.margin-top-sm {
+	margin-top: $uni-spacing-row-sm;
+}
+.margin-bottom-sm {
+	margin-bottom: $uni-spacing-row-sm;
+}
+.margin-left-sm {
+	margin-left: $uni-spacing-col-sm;
+}
+.margin-right-sm {
+	margin-right: $uni-spacing-col-sm;
+}
+.margin-top-base {
+	margin-top: $uni-spacing-row-base;
+}
+.margin-bottom-base {
+	margin-bottom: $uni-spacing-row-base;
+}
+.margin-left-base {
+	margin-left: $uni-spacing-col-base;
+}
+.margin-right-base {
+	margin-right: $uni-spacing-col-base;
+}
+.margin-top-lg {
+	margin-top: $uni-spacing-row-lg;
+}
+.margin-bottom-lg {
+	margin-bottom: $uni-spacing-row-lg;
+}
+.margin-left-lg {
+	margin-left: $uni-spacing-col-lg;
+}
+.margin-right-lg {
+	margin-right: $uni-spacing-col-lg;
+}
+
+
+
+.padding-sm {
+	padding: $uni-spacing-row-sm $uni-spacing-col-sm;
+}
+.padding-base {
+	padding: $uni-spacing-row-base $uni-spacing-col-base;
+}
+.padding-lg {
+	padding: $uni-spacing-row-lg $uni-spacing-col-lg;
+}
+
+.padding-side-sm {
+	padding-left: $uni-spacing-col-sm;
+	padding-right: $uni-spacing-col-sm;
+}
+.padding-side-base {
+	padding-left: $uni-spacing-col-base;
+	padding-right: $uni-spacing-col-base;
+}
+.padding-side-lg {
+	padding-left: $uni-spacing-col-lg;
+	padding-right: $uni-spacing-col-lg;
+}
+.padding-v-side-sm {
+	padding-top: $uni-spacing-row-sm;
+	padding-bottom: $uni-spacing-row-sm;
+}
+.padding-v-side-base {
+	padding-top: $uni-spacing-row-base;
+	padding-bottom: $uni-spacing-row-base;
+}
+.padding-v-side-lg {
+	padding-top: $uni-spacing-row-lg;
+	padding-bottom: $uni-spacing-row-lg;
+}
+
+.padding-top-sm {
+	padding-top: $uni-spacing-row-sm;
+}
+.padding-bottom-sm {
+	padding-bottom: $uni-spacing-row-sm;
+}
+.padding-left-sm {
+	padding-left: $uni-spacing-col-sm;
+}
+.padding-right-sm {
+	padding-right: $uni-spacing-col-sm;
+}
+.padding-top-base {
+	padding-top: $uni-spacing-row-base;
+}
+.padding-bottom-base {
+	padding-bottom: $uni-spacing-row-base;
+}
+.padding-left-base {
+	padding-left: $uni-spacing-col-base;
+}
+.padding-right-base {
+	padding-right: $uni-spacing-col-base;
+}
+.padding-top-lg {
+	padding-top: $uni-spacing-row-lg;
+}
+.padding-bottom-lg {
+	padding-bottom: $uni-spacing-row-lg;
+}
+.padding-left-lg {
+	padding-left: $uni-spacing-col-lg;
+}
+.padding-right-lg {
+	padding-right: $uni-spacing-col-lg;
+}
+
+
+// 边框
+.border {
+	@include border;
+}
+.border-bottom {
+	border-bottom-width: 0.5px;
+	border-bottom-style: solid;
+	border-bottom-color: $uni-border-color;
+}
+
+// 圆角
+.border-radius-sm {
+	border-radius: $uni-border-radius-sm;
+}
+.border-radius-base {
+	border-radius: $uni-border-radius-base;
+}
+.border-radius-lg {
+	border-radius: $uni-border-radius-lg;
+}
+.border-radius-circle {
+	border-radius: $uni-border-radius-circle;
+}
+
