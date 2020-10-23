@@ -7,55 +7,6 @@ function between(value, min, max) {
 }
 
 /**
- * @param {String} nodeIndex 唯一标识，vue页面为id, nvue页面为ref
- * @param {Object} ctx， 一般为this
- */
-function getNodesSize(nodeIndex, ctx) {
-	const nodeIndexList = Array.isArray(nodeIndex) ? nodeIndex : [nodeIndex];
-	
-	
-	
-	// #ifndef APP-NVUE
-	const query = uni.createSelectorQuery().in(ctx);
-	
-	nodeIndexList.forEach(nodeIndex => {
-		query.select('#' + nodeIndex).fields({rect: true, size: true});
-	})
-	
-	return new Promise((resolve, reject) => {
-		query.exec(data => {
-			const nodeSizeData = data.map(item => {
-				return item;
-			})
-			
-			resolve(nodeSizeData);
-		})
-	})
-	// #endif
-	
-	
-	// #ifdef APP-NVUE
-	const dom = uni.requireNativePlugin('dom');
-	
-	function getComponentRect(ref) {
-		return new Promise(function (resolve, reject) {
-			dom.getComponentRect(ref, data => {
-				resolve(data.size);
-			})
-		})
-	}
-	
-	
-	const nodeSizeData = nodeIndexList.map(nodeIndex => {
-		return getComponentRect(ctx.$refs[nodeIndex]);
-	})
-	
-	return Promise.all(nodeSizeData);
-	// #endif
-}
-
-
-/**
  * 将rpx或px转换为px单位
  * @param {String} vaule
  */
@@ -101,7 +52,10 @@ function generateList(count, closure) {
 	let current = null;
 	for (let i = 0; i < count; ++i) {
 		current = closure(i, deepCopy(last));
-		list.push(deepCopy(current));
+		
+		current = Array.isArray(current) ? current : [current]
+		
+		list.push(...(deepCopy(current)));
 		last = deepCopy(current);
 	}
 	
@@ -113,7 +67,6 @@ function generateList(count, closure) {
 module.exports = {
 	sleep,
 	between,
-	getNodesSize,
 	toPx,
 	deepCopy,
 	generateList,

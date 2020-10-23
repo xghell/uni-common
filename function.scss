@@ -36,9 +36,10 @@
 }
 
 @mixin lines($lines:2) {
+	text-overflow: ellipsis;
+	
 	/* #ifndef APP-NVUE */
 	word-break: break-all;
-	text-overflow: ellipsis;
 	display: -webkit-box; 
 	-webkit-box-orient: vertical; 
 	-webkit-line-clamp: $lines; 

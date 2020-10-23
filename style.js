@@ -3,8 +3,10 @@ const style = {
 	//颜色
 	UNI_COLOR_WHITE: '#FFFFFF',
 	UNI_COLOR_RED: '#dd524d',
+	UNI_COLOR_PINK: 'pink',
 	UNI_COLOR_GREEN: '#06A688',
 	UNI_COLOR_BLUE: 'blue',
+	UNI_COLOR_ORANGE: 'orange',
 	UNI_COLOR_GREY: '#c8c7cc',
 	UNI_COLOR_GREYBLACK: '#CCC',
 	
