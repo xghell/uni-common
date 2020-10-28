@@ -294,6 +294,9 @@
 }
 
 // 圆角
+.border-radius-xs {
+	border-radius: $uni-border-radius-sm;
+}
 .border-radius-sm {
 	border-radius: $uni-border-radius-sm;
 }
@@ -302,6 +305,9 @@
 }
 .border-radius-lg {
 	border-radius: $uni-border-radius-lg;
+}
+.border-radius-xl {
+	border-radius: $uni-border-radius-xl;
 }
 .border-radius-circle {
 	border-radius: $uni-border-radius-circle;

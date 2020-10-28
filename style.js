@@ -62,9 +62,11 @@ const style = {
 	UNI_IMG_SIZE_LG: '80rpx',
 	
 	// Border Radius 
+	UNI_BORDER_RADIUS_XS: '2rpx',
 	UNI_BORDER_RADIUS_SM: '4rpx',
 	UNI_BORDER_RADIUS_BASE: '6rpx',
 	UNI_BORDER_RADIUS_LG: '12rpx',
+	UNI_BORDER_RADIUS_XL: '24rpx',
 	UNI_BORDER_RADIUS_CIRCLE: '50%',
 	
 	// 水平间距 
